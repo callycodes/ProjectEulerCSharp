@@ -9,7 +9,9 @@ namespace ProjectEulerCSharp
             MultiplesOfThreeAndFive,
             EvenFibonacciNumbers,
             LargestPrimeFactor,
-            LargestPalindromeProduct
+            LargestPalindromeProduct,
+            SmallestMultiple,
+            SumSquareDifference
         }
 
         public static Array getChallenges() {
@@ -44,6 +46,19 @@ namespace ProjectEulerCSharp
                     Aesthetics.divider();
                     Console.WriteLine("Answer:");
                     Console.WriteLine(LargestPalindromeProduct.solve());
+                break;
+                case 4:
+                    Console.WriteLine(SmallestMultiple.info());
+                    Aesthetics.divider();
+                    Console.WriteLine("Answer:");
+                    Console.WriteLine(SmallestMultiple.solve());
+                break;
+
+                case 5:
+                    Console.WriteLine(SumSquareDifference.info());
+                    Aesthetics.divider();
+                    Console.WriteLine("Answer:");
+                    Console.WriteLine(SumSquareDifference.solve());
                 break;
             }
 
